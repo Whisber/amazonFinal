@@ -3,20 +3,11 @@ import MainSignUp from '@/components/MainSignUp.vue';
 
 
 describe('SignUp component unit test: ', () => {
-    test('renders task 111', () => {
+    test('createUser fonksiyonunu test ediyoruz.', () => {
         const wrapper = mount(MainSignUp, {
             propsData: {
-                user: {name:"user 123",
-                        completed:false              
-                      }
-            }
-        });
-        expect(wrapper.isVueInstance()).toBeTruthy();
-    });
-    test('renders task 222', () => {
-        const wrapper = mount(MainSignUp, {
-            propsData: {
-                user: {name:"user 321321312",
+                user: {email:"deneme@gmail.com",
+                        password:"123456",
                         completed:false              
                       }
             }
