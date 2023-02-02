@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     // 'nuxt-vuefire',
   ],
 
+  buildModules: [ '@nuxtjs/vuetify',
+    '@nuxtjs/pwa'],
+
   app: {
 
     head: {
